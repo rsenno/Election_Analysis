@@ -39,8 +39,8 @@ The following resources were used to complete the requested work:
 	- Jefferson: 10.5% (38,855)
 	- Denver: 82.8% (306,055)
 	- Arapahoe: 6.7% (24,801)
-	- Denver had the largest county turnout.
-	- In order to obtain this,  a list and a dictionary were intialized
+- **Denver had the largest county turnout:**
+	- In order to the specific and overall county results,  a list and a dictionary were intialized
 	-  
 	- ![Image of county list and dictionary intializations](images/largest_county_turnout_initialization_Screenshot_2021-05-14_173705.png)
 	-  
