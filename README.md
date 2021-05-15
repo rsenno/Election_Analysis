@@ -11,25 +11,29 @@ The Colorado Board of Elections engaged us to complete an election audit of a re
 In an addendum, the following additional request was made:
 	-  
 	-  
- 6.	Determine the county with the largest voter turnout.
+6.	Calculate the voter turnout in each county.
+	-  
+7.	Calculate the percentage of total turnout for each county
+	-   
+8.	Determine the county with the largest voter turnout
 #### Resources
 The following resources were used to complete the requested work:
 - Data Source: election_results.csv provided by client
 - Software: Python 3.7.6, Visual Studio Code 1.56.0
 ## Election-Audit Results
-	(Use a bulleted list.) (Insert images or examples of my code as support where necessary.)
+
 - **A total of 369,711 votes were cast in the election.**
 	- To determine this, a variable was initialized as show below:
 	-  
-![Image of total vote variable initialization](images/total_vote_initialization_Screenshot_2021-05-14_165416.png)
+	- ![Image of total vote variable initialization](images/total_vote_initialization_Screenshot_2021-05-14_165416.png)
 	-  
 	- Next, a for loop was constructed as follows (Note that the header row was stripped off before processing the remaining rows):
 	-  
-![Image of total vote for loop](images/total_vote_for_loop_Screenshot_2021-05-14_165838.png)
+	- ![Image of total vote for loop](images/total_vote_for_loop_Screenshot_2021-05-14_165838.png)
 	-  
 	- Then the results were output to the terminal and a text file:
 	-  
-![Image of total vote output logic](images/total_vote_output_to_terminal_and_file_Screenshot_2021-05-14_170127.png)
+	- ![Image of total vote output logic](images/total_vote_output_to_terminal_and_file_Screenshot_2021-05-14_170127.png)
 	-   
 - **The specifics for each county were as follows:**
 	- Jefferson: 10.5% (38,855)
@@ -38,44 +42,40 @@ The following resources were used to complete the requested work:
 	- Denver had the largest county turnout.
 	- In order to obtain this,  a list and a dictionary were intialized
 	-  
-![Image of county list and dictionary intializations](images/largest_county_turnout_initialization_Screenshot_2021-05-14_173705.png)
+	- ![Image of county list and dictionary intializations](images/largest_county_turnout_initialization_Screenshot_2021-05-14_173705.png)
 	-  
 	-
 	- Then, the county analysis was preformed and the output was sent both to the terminal and the text file.
 	-   
-![Iamge of county for loop and output logic](images/county_for_loop_and_output_Screenshot_2021-05-14_173945.png)
+	- ![Iamge of county for loop and output logic](images/county_for_loop_and_output_Screenshot_2021-05-14_173945.png)
 	-  
 	-  
 - **The specifics for each candidate were as follows:**
 	- Charles Casper Stockham: 23.0% (85,213)
 	- Diana DeGette: 73.8% (272,892)
 	- Raymon Anthony Doane: 3.1% (11,606)
-	- The logic for the candidate calculations is as follows:
+	- Here is an image of candidate variable initialization:
+	- ![Image of winning candidate variable initialization](images/winning_candidate_initialization_Screenshot_2021-05-14_174626.png)
 	- 
-![Image of candidate calculation](images/candidate_calculation_for_loop_Screenshot_2021-05-14_175004.png)
+	- The logic for the candidate calculations is as follows (Note that the "winning_percentage" variable had to be re-initialized to zero because it was previously used in the county calculations):
+	- 
+	- ![Image of candidate calculation](images/candidate_calculation_for_loop_Screenshot_2021-05-14_175004.png)
 	-
 - **Here are the details for the winning candidate:**
 	- Winner: Diana DeGette
 	- Winning Vote Count: 272,892
 	- Winning Percentage: 73.8%
-	- Here is an image of variable initialization for the winning candidate:
+	- Here is an image of the winning candidate output logic below (an image of the calculation was shown earlier):
 	-  
-
-![Image of winning candidate variable initialization](images/winning_candidate_initialization_Screenshot_2021-05-14_174626.png)
-	-  
-	- ...and here is an image of the winning candidate calculation:
-	-  
-![Image of winning candidate output logic](images/'winning_candidate_output_Screenshot 2021-05-14 175407.png')
+	- ![Image of winning candidate output logic](images/winning_candidate_output_Screenshot_2021-05-14_175407.png)
 	-  
 - **Here is an image of the terminal output:**
 -   
-
-![Screenshot of Terminal Output](images/Terminal_Output_Screenshot_2021-05-14_164717.png)
+- ![Screenshot of Terminal Output](images/Terminal_Output_Screenshot_2021-05-14_230548.png)
 -  
 - **Here is an image of the output file contents:**
 -   
-
-![Screenshot of Text File Output](images/Text_File_Output_Screenshot_2021-05-14_164525.png)
+- ![Screenshot of Text File Output](images/Text_File_Output_Screenshot_2021-05-14_164525.png)
 -  
 ## Election-Audit Summary (Further Work)
 The requirements of the Colorado Board of Elections for this project were implemented in the simplest manner possible. These requirements could be expanded upon in various ways including the following:
